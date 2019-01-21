@@ -1,0 +1,10 @@
+###################################################
+### Dependencies for pingex Functionality       ###
+###                                             ###
+### To install, run:                            ###
+###      $ pip install -r requirements.txt      ###
+###                                             ###
+###################################################
+
+## packet manipulation dependencies ##
+scapy
