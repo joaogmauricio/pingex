@@ -46,8 +46,12 @@ def process_packet(packet):
 
 
 if len(sys.argv) == 1:
-	print("Sniffing on all interfaces.")
+        print("Sniffing on all interfaces.")
 else:
-	print("Sniffing interface: {}.".format(sys.argv[1]))
+        if sys.argv[1] == "-h":
+                print("Usage: {0} [<iface>]. Example: {0} eth0".format(sys.argv[0]))
+                exit()
+        else:
+                print("Sniffing interface: {}.".format(sys.argv[1]))
 
 sniff(filter="inbound and icmp[icmptype] == 8", prn=process_packet)
