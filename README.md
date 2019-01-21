@@ -1,2 +1,2 @@
 # pingex
-Exfiltrate data using ICMP Echo Request
+Exfiltrate data using ICMP Echo Requests
